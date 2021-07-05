@@ -1,0 +1,93 @@
+---
+source_video: "SrcVideo"
+source_audio: "SrcAudio"
+split_audio: "Audio"
+workdir: "scratch"
+output: "Mixed"
+image_dir: "scratch"
+ores: 1280x720                # output resolution (used only when title is given)
+ofps: 25                      # output video frame rate (idem) 
+title: 3
+template: "title.html.erb"
+concat: true
+
+parts:
+  # - 
+  #   v: 00001.MTS            # source video file name
+  #   a: 000327_0011.wav      # source audio file name
+  #   vc: 8                   # crop first vc seconds of video
+  #   vp: 0                   # prepend vp seconds to vide
+  #   ab: '00:00:44'          # audio begins at ab in source audio file
+  #   ae: '00:03:30'          # audio ends at ae in source audio file
+  #   d: a                    # output mixed file will be written in subdir d
+
+  - 
+    v: 01.MTS
+    a: 210701_0025.wav
+    vc: 0
+    vp: 0
+    ab: '00:05:05'
+    ae: '00:12:40'
+    title:
+      composer: "Antonin DVORAK"
+      title: "Sonatine op. 100 transcript pour quatuor par C.-D. Ludwig"
+      desc: "1<sup>er</sup> mouvement: <em>Allegro risoluto</em>"
+      artist: "Ciccio Pasticcio and Pierino Paperino (violin), Nonna Papera (alto), Donald Duck (cello)"
+      short: "DVORAK: Sonatine op. 100 / 1. Allegro risoluto"
+
+  - 
+    v: 02.MTS
+    a: 210701_0025.wav
+    vc: 4
+    vp: 0
+    ab: '00:13:22'
+    ae: '00:17:14'
+    title:
+      composer: "Joseph HAYDN"
+      title: "Quatuor en Do Maj op 33/3 (<em>l'oiseau</em>)"
+      desc: "4<sup>me</sup> mouvement: Rondo presto"
+      artist: "Albert Einstein and Niels Bohr (violons), Wolfgang Pauli (alto), Marie Curie (violoncelle)"
+      short: "HAYDN: Quatuor en Do Maj op 33/3 -- 4. Rondo presto"
+
+  - 
+    v: 03.MTS
+    a: 210701_0025.wav
+    vc: 6
+    vp: 0
+    ab: '00:19:14'
+    ae: '00:23:40'
+    title:
+      composer: "Henry PURCELL"
+      title: "Trois danses extraits de &laquo;Fairy Queen&raquo;"
+      desc: "Entry dance, the Monkeys dance, Hornpipe"
+      artist: "Quatuor <em>In Fieri</em>"
+      short: "PURCELL: Trois danses extraits de Fairy Queen"
+
+  - 
+    v: 04.MTS
+    a: 210701_0025.wav
+    vc: 3
+    vp: 0
+    ab: '00:24:28'
+    ae: '00:34:50'
+    title:
+      composer: "Felix MENDELSSOHN"
+      title: "Concerto pour violon no. 1 en ré min,"
+      desc: "1<sup>er</sup> mouvement: allegro"
+      artist: "Salvatore Accardo, I solisti veneti."
+      short: "MENDELSSOHN: Concerto pour violon no. 1 -- 1. allegro"
+
+  - 
+    v: 05.MTS
+    a: 210701_0025.wav
+    vc: 4
+    vp: 0
+    ab: '00:36:45'
+    ae: '00:43:40'
+    title:
+      composer: "Ludwig van BEETHOVEN"
+      title: "Quatuor en do min. op 18/4"
+      desc: "2<sup>me</sup> mouvement: andante scherzoso quasi allegretto"
+      artist: "John and George (violons), Ringo (alto), Paul (violoncelle)"
+      short: "BEETHOVEN: Quatuor en do min. op 18/4 -- 2. andante scherzoso quasi allegretto"
+
